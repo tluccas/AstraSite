@@ -1,0 +1,175 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h2{
+    color:white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2 span{
+    color: #8ceafd;
+}
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-adicione button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    background-color: #66cdc6;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #baf3ff;
+    transform: scale(1.05);
+}
+
+
+section{
+    margin-bottom: 80px;
+}
+
+@keyframes crescer {
+
+    0%{
+       transform:  scale(1.0);
+    }100%{
+       transform:  scale(1.1);
+    }
+    
+}
+/* CABEÇARIO */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color:#4e5f5e;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* INICIO */
+
+section.inicio{
+    padding: 40px 4%
+}
+
+section.inicio .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+}
+
+.inicio .txt-inicio h1{
+    color: white;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.inicio .txt-inicio h1 span{
+    color: #66cdc6;
+    font-size: 40px;
+}
+
+.inicio .txt-inicio p{
+    color: white;
+    font-size: 20px;
+    margin: 40px 0px;
+  
+}
+
+.inicio .img-inicio img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }100%{
+        top: 30px;
+    }
+    
+}
+/* SOBRE */
+
+section.sobre{
+    padding: 40px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre h2{
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre p{
+    margin: 30px 0;
+    color:white;
+    text-align: justify;
+}
+
+.sobre .btn-repo button{
+    position: relative;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+    animation: crescer 2s ease-in-out infinite alternate;
+}
