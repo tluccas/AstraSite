@@ -173,3 +173,80 @@ section.sobre .flex{
     transition: .2s;
     animation: crescer 2s ease-in-out infinite alternate;
 }
+
+/* SOBRE */
+
+section.comandos{
+    padding: 40px 4%;
+}
+
+section.comandos .img-comandos{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+section.comandos .flex{
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.comandos .titulo {
+    align-items: center;
+}
+
+.comandos .comandos-box {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 1s;
+}
+
+.comandos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #79e9e1b7;
+}
+
+section.comandos .txt-comandos {
+    width: 100%;
+    text-align: left;
+}
+
+.txt-comandos .comando{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 55px;
+    margin-bottom: 45px;
+}
+section.comandos .txt-comandos h3{
+   margin: 0;
+    font-size: 20px;
+    line-height: 1.2;
+    color: white;
+}
+
+.txt-comandos h3 span{
+    color: #66cdc6;
+}
+
+.txt-comandos p{
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.2;
+    color: white;
+}
+
+section.comandos p.desc{
+    margin-top: 40px;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section.comandos p.desc span{
+    color: #66cdc6;
+}
