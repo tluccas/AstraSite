@@ -250,3 +250,14 @@ section.comandos p.desc{
 section.comandos p.desc span{
     color: #66cdc6;
 }
+
+/* SUPORTE */
+
+section.suporte{
+    padding: 40px 4%;
+}
+
+section.suporte .txt-suporte{
+    width: 100%;
+    text-align: center;
+}
