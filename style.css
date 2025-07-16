@@ -1,5 +1,5 @@
 /* ESTILO GERAL */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,30 +7,31 @@
     scroll-behavior: smooth;
 }
 
-h2{
-    color:white;
+h2 {
+    color: white;
     font-size: 38px;
     text-align: center;
 }
 
-h2 span{
+h2 span {
     color: #8ceafd;
 }
-body{
+
+body {
     background-color: black;
     height: 100vh;
 }
 
-.interface{
+.interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-.btn-adicione button{
+.btn-adicione button {
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 700;
@@ -42,124 +43,130 @@ body{
     transition: .2s;
 }
 
-button:hover{
+button:hover {
     box-shadow: 0px 0px 8px #baf3ff;
     transform: scale(1.05);
 }
 
 
-section{
+section {
     margin-bottom: 80px;
 }
 
 @keyframes crescer {
 
-    0%{
-       transform:  scale(1.0);
-    }100%{
-       transform:  scale(1.1);
+    0% {
+        transform: scale(1.0);
     }
-    
+
+    100% {
+        transform: scale(1.1);
+    }
+
 }
+
 /* CABEÇARIO */
 
-header{
+header {
     padding: 40px 4%;
 }
 
-header > .interface{
+header>.interface {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header a{
-    color:#4e5f5e;
+header a {
+    color: #4e5f5e;
     text-decoration: none;
     display: inline-block;
 }
 
-header a:hover{
+header a:hover {
     color: white;
     transform: scale(1.05);
     transition: .2s;
 }
 
-header nav ul{
+header nav ul {
     list-style-type: none;
 }
 
-header nav ul li{
+header nav ul li {
     display: inline-block;
     padding: 0 40px;
 }
 
 /* INICIO */
 
-section.inicio{
+section.inicio {
     padding: 40px 4%
 }
 
-section.inicio .flex{
+section.inicio .flex {
     align-items: center;
     justify-content: center;
     gap: 110px;
 }
 
-.inicio .txt-inicio h1{
+.inicio .txt-inicio h1 {
     color: white;
     font-size: 40px;
     line-height: 40px;
 }
 
-.inicio .txt-inicio h1 span{
+.inicio .txt-inicio h1 span {
     color: #66cdc6;
     font-size: 40px;
 }
 
-.inicio .txt-inicio p{
+.inicio .txt-inicio p {
     color: white;
     font-size: 20px;
     margin: 40px 0px;
-  
+
 }
 
-.inicio .img-inicio img{
+.inicio .img-inicio img {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
 @keyframes flutuar {
-    0%{
+    0% {
         top: 0;
-    }100%{
+    }
+
+    100% {
         top: 30px;
     }
-    
+
 }
+
 /* SOBRE */
 
-section.sobre{
+section.sobre {
     padding: 40px 4%;
 }
 
-section.sobre .flex{
+section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
 
-.sobre .txt-sobre h2{
+.sobre .txt-sobre h2 {
     line-height: 40px;
     margin-bottom: 30px;
 }
 
-.sobre .txt-sobre p{
+.sobre .txt-sobre p {
     margin: 30px 0;
-    color:white;
+    color: white;
     text-align: justify;
 }
 
-.sobre .btn-repo button{
+.sobre .btn-repo button {
     position: relative;
     float: right;
     width: 30px;
@@ -176,20 +183,20 @@ section.sobre .flex{
 
 /* SOBRE */
 
-section.comandos{
+section.comandos {
     padding: 40px 4%;
 }
 
-section.comandos .img-comandos{
+section.comandos .img-comandos {
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-section.comandos .flex{
+section.comandos .flex {
     gap: 10px;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .comandos .titulo {
@@ -202,10 +209,10 @@ section.comandos .flex{
     padding-top: 10px;
     border-radius: 25px;
     margin-top: 15px;
-    transition: 1s;
+    transition: .8s;
 }
 
-.comandos-box:hover{
+.comandos-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 8px #79e9e1b7;
 }
@@ -215,50 +222,123 @@ section.comandos .txt-comandos {
     text-align: left;
 }
 
-.txt-comandos .comando{
+.txt-comandos .comando {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-top: 55px;
     margin-bottom: 45px;
 }
-section.comandos .txt-comandos h3{
-   margin: 0;
+
+section.comandos .txt-comandos h3 {
+    margin: 0;
     font-size: 20px;
     line-height: 1.2;
     color: white;
 }
 
-.txt-comandos h3 span{
+.txt-comandos h3 span {
     color: #66cdc6;
 }
 
-.txt-comandos p{
+.txt-comandos p {
     margin: 0;
     font-size: 16px;
     line-height: 1.2;
     color: white;
 }
 
-section.comandos p.desc{
+section.comandos p.desc {
     margin-top: 40px;
     align-items: center;
     text-align: center;
     color: white;
 }
 
-section.comandos p.desc span{
+section.comandos p.desc span {
     color: #66cdc6;
 }
 
 /* SUPORTE */
 
-section.suporte{
+section.suporte {
     padding: 40px 4%;
 }
 
-section.suporte .txt-suporte{
-    width: 100%;
-    
+.suporte .flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.suporte a {
+    text-decoration: none;
+}
+
+section.suporte .box-suporte {
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 40px;
+    border-radius: 25px;
+    margin-top: 40px;
+    transition: .5s;
+}
+
+.suporte .box-suporte i {
     text-align: center;
+    font-size: 27px;
+    padding: 10px;
+}
+
+.suporte .box-suporte:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #79e9e1b7;
+
+}
+
+section.suporte .txt-suporte {
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 8px #66cdc6;
+}
+
+
+footer .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+footer .flex .icones {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+footer .flex .icones button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff2a;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 8px;
+    transition: .5s;
+    
+}
+
+.flex .icones button:hover{
+    background-color: white;
 }
